@@ -1,7 +1,16 @@
 import './App.css';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 function App() {
-  return <div className="App">Wanted Pre-onboarding FE - March, 2023</div>;
+  return (
+    <div id="app">
+      <Header />
+      <div id="container">
+        <Sidebar />
+      </div>
+    </div>
+  );
 }
 
 export default App;

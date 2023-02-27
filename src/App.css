@@ -1,6 +1,59 @@
+html,
+body {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
+  height: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  color: navy;
+  font-style: italic;
+  font-weight: 600;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  height: 5%;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid navy;
+  font-size: 0.6rem;
+  text-align: left;
+}
+
+#container {
+  height: 95%;
+}
+
+#sidebar {
+  width: 12%;
+  height: 95%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-right: 1px solid navy;
+}
+
+#sidebar ul {
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+  list-style: none;
+}
+
+#sidebar li {
+  padding-bottom: 1rem;
+}
+
+#sidebar a {
+  text-decoration: none;
 }
